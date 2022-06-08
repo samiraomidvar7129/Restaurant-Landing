@@ -1,0 +1,51 @@
+.header{
+    background-color:#000000;
+    background-image: linear-gradient(to bottom ,#4d4c4c4f,#000000),url('../pic/healthy-food-in-kitchen.jpg');
+    background-size: cover;
+    grid-column: 1/ -1;
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.title1{
+    font-size: 30px;
+    color: #fff;
+}
+.titlt2{
+    color: #fff;
+}
+.titlt2 span{
+    color: orange;
+}
+.header-btn{
+    padding: 20px 30px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: orange;
+    border: 1px solid orange;
+    font-family: sans-serif;
+    font-size: 14px;
+    transition: 0.4s linear;
+    cursor: pointer;
+    justify-self: center;
+}
+.header-btn:hover{
+    background-color: #fff;
+    color: orange;
+}
+
+@media screen and (max-width:500px) {
+    .header{
+        background-position-x: 10%;
+    }
+    .title1{
+        font-size: 22px;
+    }
+    .titlt2{
+        font-size: 25px;
+        color: #fff;
+    }
+}
